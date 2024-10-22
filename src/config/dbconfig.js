@@ -1,7 +1,7 @@
-// server -> ODM Library -> query of database
-// most famous ODM library is mongoose..
+// server -> ODM Library -> query of database   //object document model
+// most famous ODM library is mongoose..        //object relational model
 
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 import { DB_URL } from "./serverconfig.js";
 
 export default async function connectDB(){
@@ -13,4 +13,4 @@ export default async function connectDB(){
         console.log("something went wrong",error);
         
     }
-}
+};
