@@ -11,8 +11,8 @@ const postschema = new mongoose.Schema({
         required: true
      },
      user: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "user"
+        type: mongoose.Schema.Types.ObjectId, //  This is used to reference an object ID from another document in MongoDB. 
+        ref: "user" //The ref option tells Mongoose which model to refer to. In this example, it’s referencing a model called User
      }
 });
 
